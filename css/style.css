@@ -47,8 +47,8 @@
 @media (max-width: 79.9375em){
 .main_header_nav { position:fixed; left:-100%; background-color:var(--cor-seis); top:0; width:76%; min-width:200px; max-width:360px; height:100%; overflow:hidden; overflow-y:auto; -webkit-box-shadow:5px 0px 5px -5px rgba(0,0,0,0.75); -moz-box-shadow:5px 0px 5px -5px rgba(0,0,0,0.75); box-shadow:5px 0px 5px -5px rgba(0,0,0,0.75); z-index:99;  }
 .main_header_nav_item      { float:left; width:100%; position:relative; border-bottom:1px #2e3031 solid; }
-.main_header_nav_item > a  { float:left; width:100%; padding:8px 23px; font-family:'open_sansregular'; text-decoration:none; color:#ffffff; font-size:1em; }
-.main_header_nav_item:hover,.main_header_nav_item > a:hover { background-color:var(--laranja); color:var(--branco); }
+.main_header_nav_item > a  { float:left; width:100%; padding:30px 30px; font-family:'open_sansregular'; text-decoration:none; color:#ffffff; font-size:1em; }
+.main_header_nav_item:hover,.main_header_nav_item > a:hover { background-color:var(--cor-cinco); color:var(--cor-sete); }
 .main_header_nav_item  span   { width:25px; height:25px; line-height:28px; text-align:center; font-size:1.2em; float:right; display:block; }
 
 }
@@ -142,6 +142,7 @@
 .hover_cardapio .descricao    { background-color:transparent; float:left; width: 100%;  display:block; text-align:center; padding: 0.5em; }
 .hover_cardapio .descricao h4 { width:100%; float:left; color:var(--cor-cinco); font-size:1.3em; font-family:'open_sansregular', sans-serif; margin-bottom:2em; }
 .hover_cardapio .descricao p  { width:100%; float:left; color: var(--cor-seis); font-size:1em;  font-family:'open_sanslight', sans-serif; margin-bottom:1em;  }
+.botao_cardapio a {display: flex; justify-content: center; align-items: center; text-align: center;}
 
 /*Cardápio*/
 
@@ -271,10 +272,10 @@
 .main_header_nav a:hover, .main_header_nav> li:hover > a{ background:transparent; color:#4a688e; }
 .main_header_nav a.menuAtivo{ background-color:var(--cor-tres); color:var(--cor-seis); }
 
-.main_header_nav_item { position:relative; display:inline-block; float:left;}
+.main_header_nav_item { position:relative; display:inline-block;}
 .main_header_nav_item:last-of-type { margin-right:20px;} 
 
-.main_header_nav_item  span   { display:none;  }
+.main_header_nav_item  span   { display:none;}
 
 .main_header_nav_item > a  { color:var(--preto); float:left; padding:1.5em 1em; font-size:0.95em; font-family:'open_sansbold'; text-decoration:none; text-transform:uppercase; }
 .main_header_nav_item:hover, 
