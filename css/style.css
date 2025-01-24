@@ -24,7 +24,7 @@
 .btn_social li a { display:block;  text-decoration:none; color:#fff; transition:.3s ease-in-out;}
 .btn_social li:before { position:absolute; content:''; width:100%; height:100%; top:0; left:0; background:var(--cor-dois); border-radius:50%; z-index:-1; transform: scale(0); transition:.3s ease-in-out; }
 .btn_social li:hover:before { transform:scale(0.9); }
-.btn_social li a:hover { color:var(--laranja); }
+.btn_social li a:hover { color:var(--cor-tres); }
 /*Botão Padrao Fim*/
 
 .content { float:left; width:92%; margin:0 4%; padding: 20px 0; }
@@ -36,19 +36,19 @@
 .main_header.fixed { display:block; position:fixed; z-index:99; }
 
 .main_header_logo { font-size:0; float:left; }
-.main_header_logo img { height:50px; }
+.main_header_logo img { height:50px; margin-top: 0.75rem;}
 
-.mobile_action { color:var(--preto); text-align:center; width:40px; height:40px; line-height:45px;  font-size:1.8em; float:right; cursor:pointer; margin:30px 8px;  }
-.mobile_action.active { color:var(--vermelho); }
+.mobile_action { color:var(--cor-sete); text-align:center; width:40px; height:40px; line-height:45px;  font-size:1.8em; float:right; cursor:pointer; margin:30px 8px;  }
+.mobile_action.active { color:var(--cor-sete); }
 
 /*MENU*/
 
 /*1279PX BREAKPOINT - 1279 dividido por 16 = 79.9375em*/
 @media (max-width: 79.9375em){
-.main_header_nav { position:fixed; left:-100%; background-color:var(--cor-seis); top:0; width:76%; min-width:200px; max-width:360px; height:100%; overflow:hidden; overflow-y:auto; -webkit-box-shadow:5px 0px 5px -5px rgba(0,0,0,0.75); -moz-box-shadow:5px 0px 5px -5px rgba(0,0,0,0.75); box-shadow:5px 0px 5px -5px rgba(0,0,0,0.75); z-index:99;  }
-.main_header_nav_item      { float:left; width:100%; position:relative; border-bottom:1px #2e3031 solid; }
-.main_header_nav_item > a  { float:left; width:100%; padding:30px 30px; font-family:'open_sansregular'; text-decoration:none; color:#ffffff; font-size:1em; }
-.main_header_nav_item:hover,.main_header_nav_item > a:hover { background-color:var(--cor-cinco); color:var(--cor-sete); }
+.main_header_nav { position:fixed; left:-100%; background-color:var(--cor-sete); top:0; width:76%; min-width:200px; max-width:360px; height:100%; overflow:hidden; overflow-y:auto; -webkit-box-shadow:5px 0px 5px -5px rgba(0,0,0,0.75); -moz-box-shadow:5px 0px 5px -5px rgba(0,0,0,0.75); box-shadow:5px 0px 5px -5px rgba(0,0,0,0.75); z-index:99;  }
+.main_header_nav_item      { float:left; width:100%; position:relative; }
+.main_header_nav_item > a  { float:left; width:100%; padding:30px 30px; font-family:'open_sansregular'; text-decoration:none; color:var(--cor-seis); font-size:1em; font-weight: 700;}
+.main_header_nav_item:hover,.main_header_nav_item > a:hover { background-color:var(--cor-um); color:var(--cor-sete); }
 .main_header_nav_item  span   { width:25px; height:25px; line-height:28px; text-align:center; font-size:1.2em; float:right; display:block; }
 
 }
@@ -96,6 +96,7 @@
 
 .apresentacao_text{
     padding-top: 1rem;
+    color: var(--cor-seis);
 }
 
 .botao_apresentacao{
@@ -124,6 +125,99 @@
     }
 }
 
+section.sobre_nos {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--cor-sete);
+    width: 100%;
+    height: auto;
+}
+
+.sobre_infos,
+.sobre_imagen {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    padding-left: 4rem;
+}
+
+
+.sobre_infos {
+    flex-direction: column; 
+}
+
+.sobre_titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--cor-seis);
+    font-weight: 600;
+}
+
+.sobre_subtitulo {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: var(--cor-cinco);
+    max-width: 75%;
+    font-weight: 600;
+}
+
+.sobre_texto {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #666;
+    max-width: 75%;
+}
+
+
+.sobre_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empresa_img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section.sobre_nos {
+        flex-direction: column;
+    }
+
+    .sobre_infos {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .empresa_img {
+        width: 80%; 
+        height: auto;
+    }
+
+    .sobre_infos,
+    .sobre_imagen {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    padding-left: 2rem;
+}
+
+} 
+
 
 
 /*Cardápio*/
@@ -144,7 +238,6 @@
 .hover_cardapio .descricao    { background-color:transparent; float:left; width: 100%;  display:block; text-align:center; padding: 0.5em; }
 .hover_cardapio .descricao h4 { width:100%; float:left; color:var(--cor-cinco); font-size:1.3em; font-family:'open_sansregular', sans-serif; margin-bottom:2em; }
 .hover_cardapio .descricao p  { width:100%; float:left; color: var(--cor-seis); font-size:1em;  font-family:'open_sanslight', sans-serif; margin-bottom:1em;  }
-.botao_cardapio a {display: flex; justify-content: center; align-items: center; text-align: center;}
 
 /*Cardápio*/
 
@@ -172,11 +265,14 @@
 .formulario .campo     { font-size:1.2em; color:#7b7979; font-family:'open_sansregular'; outline:none; border:1px #dee5ed solid; border-radius:3px; padding:0.6em; transition:.5s; }
 .formulario .campo:focus { box-shadow:0 0 4px 0px rgb(255, 130, 0); border:1px rgb(255, 130, 0) solid; color:#ff8200; }
 .formulario .btn-enviar  { width:160px; float:left; margin-top:5px; background-color:#ffffff; color:#7b7979; border: 1px #dee5ed solid; border-radius:3px; cursor:pointer; padding:0.5em 0em; font-size:1.5em; font-family:'open_sansregular'; transition: 0.2s; }
-.formulario .btn-enviar:hover { background-color:var(--laranja); color:#ffffff; border: 1px var(--laranja) solid;}
+.formulario .btn-enviar:hover { background-color:var(--cor-cinco); color:#ffffff; border: 1px var(--laranja) solid;}
 
 .info     { width:100%; float:left; display:block; margin-bottom:20px; }
 .info p   { width:100%; margin-bottom:5px; font-size: 0.79em; color:#7b7979; }
 .info p i { margin-right:5px; }
+
+/*DEPOIMENTOS*/
+.cor{color: var(--cor-seis);}
 
 
 /*FOOTER*/
@@ -270,26 +366,25 @@
 /*1280 dividido por 16 = 80em*/
 @media (min-width:80em){
 
-.mobile_action   { display:none; }
-.main_header_nav { float:right; width:auto; }
-.main_header_nav a:hover, .main_header_nav> li:hover > a{ background:transparent; color:#4a688e; }
-.main_header_nav a.menuAtivo{ background-color:var(--cor-tres); color:var(--cor-seis); }
+    .mobile_action   { display:none; }
+    .main_header_nav { float:right; width:auto; }
+    .main_header_nav a:hover, .main_header_nav> li:hover > a{color:var(--cor-seis); }
+    .main_header_nav a.menuAtivo{color:var(--cor-seis); }
 
-.main_header_nav_item { position:relative; display:inline-block;}
-.main_header_nav_item:last-of-type { margin-right:20px;} 
+    .main_header_nav_item { position:relative; display:inline-block;}
+    .main_header_nav_item:last-of-type { margin-right:20px;} 
 
-.main_header_nav_item  span   { display:none;}
+    .main_header_nav_item  span   { display:none;}
 
-.main_header_nav_item > a  { color:var(--preto); float:left; padding:1.5em 1em; font-size:0.95em; font-family:'open_sansbold'; text-decoration:none; text-transform:uppercase; }
-.main_header_nav_item:hover, 
-.main_header_nav_item > a:hover { background:var(--preto); color:var(--branco)!important; }
+    .main_header_nav_item > a  { color:var(--cor-sete); float:left; padding:1.5em 1em; font-size:0.95em; font-family:'open_sansbold'; text-decoration:none; text-transform:uppercase; }
+    .main_header_nav_item:hover, 
+    .main_header_nav_item > a:hover { background:var(--cor-sete); color:var(--cor-seis)!important; }
+    .galeria-foto .foto:nth-of-type(2n+0), 
+    .galeria-foto .foto { width:23.5%; margin-right:2%; margin-bottom:2%; }
+    .galeria-foto .foto:nth-of-type(4n+0) { margin-right:0; }
 
-.galeria-foto .foto:nth-of-type(2n+0), 
-.galeria-foto .foto { width:23.5%; margin-right:2%; margin-bottom:2%; }
-.galeria-foto .foto:nth-of-type(4n+0) { margin-right:0; }
-
-.topoPag .centraliza h1 { font-size:2em; margin-top:50px; }
-.topoPag .centraliza p  { font-size:1em; letter-spacing:20px; }
+    .topoPag .centraliza h1 { font-size:2em; margin-top:50px; }
+    .topoPag .centraliza p  { font-size:1em; letter-spacing:20px; }
 }
 
 /*1366PX BREAKPOINT*/
@@ -303,7 +398,6 @@
 /*1600PX BREAKPOINT*/
 /*1600 dividido por 16 = 100em*/
 @media (min-width:100em){
-
 
 }
 
