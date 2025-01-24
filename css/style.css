@@ -295,6 +295,9 @@ section.sobre_nos {
 .main_footer_copy .by a       { text-decoration:none; color:var(--preto); display:inline; }
 .main_footer_copy .by a:hover { text-decoration:underline; color:var(--laranja); }
 .main_footer_copy .by i       { font-size:0.96em; margin-right:3px; color:var(--preto); }
+.coluna_titulo { color:var(--cor-dois); padding-bottom: 0.5rem; text-align: end;}
+.coluna_subtitulo { color:var(--cor-seis); padding-bottom: 1rem; text-align: end; margin-bottom: 0.5rem}
+
 
 /*480PX BREAKPOINT*/
 /*480 dividido por 16 = 30em*/
@@ -302,6 +305,7 @@ section.sobre_nos {
 
 .box-css { float:left; width:48%; margin-right:4%; min-height: 300px;}
 .box-css:nth-of-type(2n+0) {margin-right:0; }
+
 
 .info p   { font-size:1em; }
 
