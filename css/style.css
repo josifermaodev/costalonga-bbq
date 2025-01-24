@@ -306,7 +306,7 @@ section.sobre_nos {
 .main_footer_copy .by a:hover { text-decoration:underline; color:var(--laranja); }
 .main_footer_copy .by i       { font-size:0.96em; margin-right:3px; color:var(--preto); }
 .coluna_titulo { color:var(--cor-dois); padding-bottom: 0.5rem; text-align: end;}
-.coluna_subtitulo { color:var(--cor-seis); padding-bottom: 1rem; text-align: end; margin-bottom: 0.5rem}
+.coluna_subtitulo { color:#7b7979; padding-bottom: 1rem; text-align: end; margin-bottom: 0.5rem}
 
 
 /*480PX BREAKPOINT*/
