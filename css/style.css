@@ -46,7 +46,7 @@
 .main_header.fixed { display:block; position:fixed; z-index:99; }
 
 .main_header_logo { font-size:0; float:left; }
-.main_header_logo img { width: 300px; height: auto; margin-top: 1.75rem;}
+.main_header_logo img { width: 250px; height: auto; margin-top: 1.75rem;}
 
 .mobile_action { color:var(--cor-sete); text-align:center; width:40px; height:40px; line-height:45px;  font-size:1.8em; float:right; cursor:pointer; margin:30px 8px;  }
 .mobile_action.active { color:var(--cor-sete); }
@@ -69,12 +69,13 @@
 
 /*Chamada*/
 .apresentacao{
+    display: flex;
+    justify-content: center;
     background-image: url('/img/apresentacao.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-   
 }
 
 .apresentacao_div {
@@ -295,7 +296,7 @@ section.sobre_nos {
 /*FOOTER*/
 .main_footer { background-color:var(--branco); color:var(--preto); font-size:0.875em; }
 .main_footer .content { float:left; width:80%; margin:0 10%; padding: 5em 0; }
-.container { float:left; width:100%; }
+.container { float:left; width:100%; position: relative; z-index: 1;}
 
 .main_footer_copy          { width:100%; float:left; text-align:center; }
 .main_footer_copy .content { padding:1.2em 0em!important; }
