@@ -392,7 +392,7 @@ section.sobre_nos {
     .mobile_action   { display:none; }
     .main_header_nav { float:right; width:auto; }
     .main_header_nav a:hover, .main_header_nav> li:hover > a{color:var(--cor-seis); }
-    .main_header_nav a.menuAtivo{color:var(--cor-seis); }
+    .main_header_nav a.menuAtivo{color:var(--cor-dois); }
 
     .main_header_nav_item { position:relative; display:inline-block;}
     .main_header_nav_item:last-of-type { margin-right:20px;} 
@@ -401,7 +401,7 @@ section.sobre_nos {
 
     .main_header_nav_item > a  { color:var(--cor-sete); float:left; padding:1.5em 1em; font-size:0.95em; font-family:'open_sansbold'; text-decoration:none; text-transform:uppercase; }
     .main_header_nav_item:hover, 
-    .main_header_nav_item > a:hover { background:var(--cor-sete); color:var(--cor-dois)!important; }
+    .main_header_nav_item > a:hover { background:var(--cor-um); color:var(--cor-dois)!important; }
     .galeria-foto .foto:nth-of-type(2n+0), 
     .galeria-foto .foto { width:23.5%; margin-right:2%; margin-bottom:2%; }
     .galeria-foto .foto:nth-of-type(4n+0) { margin-right:0; }
