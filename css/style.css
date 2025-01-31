@@ -163,6 +163,7 @@ section.sobre_nos {
 
 .sobre_infos {
     flex-direction: column; 
+    text-align: center;
 }
 
 .sobre_titulo {
