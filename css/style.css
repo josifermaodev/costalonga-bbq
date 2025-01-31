@@ -401,7 +401,7 @@ section.sobre_nos {
 
     .main_header_nav_item > a  { color:var(--cor-sete); float:left; padding:1.5em 1em; font-size:0.95em; font-family:'open_sansbold'; text-decoration:none; text-transform:uppercase; }
     .main_header_nav_item:hover, 
-    .main_header_nav_item > a:hover { background:var(--cor-sete); color:var(--cor-seis)!important; }
+    .main_header_nav_item > a:hover { background:var(--cor-sete); color:var(--cor-dois)!important; }
     .galeria-foto .foto:nth-of-type(2n+0), 
     .galeria-foto .foto { width:23.5%; margin-right:2%; margin-bottom:2%; }
     .galeria-foto .foto:nth-of-type(4n+0) { margin-right:0; }
